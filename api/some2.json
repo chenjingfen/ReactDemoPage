@@ -1,0 +1,43 @@
+[
+    {
+      "name":"camera",
+      "service":"http",
+      "vul":"弱密44钥",
+      "type":"IPCamera",
+      "port":8080
+    },
+    {
+      "name":"camer2",
+      "service":"http",
+      "vul":"弱密44钥",
+      "type":"IPCamera",
+      "port":8080
+    }
+    , {
+      "name":"camer3",
+      "service":"http",
+      "vul":"弱33密钥",
+      "type":"IPCamera",
+      "port":8080
+    }
+    , {
+      "name":"camer4",
+      "service":"http",
+      "vul":"弱密钥",
+      "type":"IPCamera",
+      "port":8080
+    },
+    {
+      "name":"camer6",
+      "service":"http",
+      "vul":"弱密钥",
+      "type":"IPCamera",
+      "port":8080
+    }, {
+      "name":"camer5",
+      "service":"http",
+      "vul":"弱密钥",
+      "type":"IPCamera",
+      "port":8080
+    }
+  ]

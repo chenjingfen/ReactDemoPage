@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ArcGis</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .zoom-btns {
+            float: left;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+        }
+        .button {
+            display: inline-block;
+            position: relative;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 2em;
+            background-color: #fff;
+            color: #646464;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .button.circle {
+            border-radius: 50%;
+        }
+        .button:hover {
+            opacity: 0.8;
+            color: rgba(0, 0, 0, 0.25);
+        }
+        .button.raised {
+            transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0.2s;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+        }
+        .button.raised:active {
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+            transition-delay: 0s;
+        }
+        .disable {
+            opacity: 0.8;
+            color: rgba(0, 0, 0, 0.25);
+        }
+        .disable:hover {
+            opacity: 0.8;
+            color: rgba(0, 0, 0, 0.25);
+        }
+        .material-icons {
+            font-size: 1.2em;
+            line-height: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="../bower_components/arcgis_js_api/esri/css/main.css"/>
+</head>
+<body>
+<div id="viewDiv"></div>
+<script>
+    window.dojoConfig = {
+        async: true,
+        packages: [{
+            name: "react",
+            location: "/React/bower_components/react",
+            main: "react"
+        }, {
+            name: "react-dom",
+            location: "/React/bower_components/react",
+            main: "react-dom"
+        }]
+    };
+</script>
+<script src="../bower_components/arcgis_js_api/init.js"></script>
+<script src="../js/arcgisMap.js"></script>
+
+
+</body>
+</html>
